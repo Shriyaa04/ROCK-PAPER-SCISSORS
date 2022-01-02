@@ -101,7 +101,8 @@ printf("\n3.Rock");
 printf("\n4.Quit\n");
 scanf("%d",&userChoice);
 
-compChoice = (rand() % 3) + 1;
+compChoice = (rand() % 3) + 1;   // If random numbers are generated with rand() without first calling srand(), 
+				//your program will create the same sequence of numbers each time it runs.
 checkOptions(userChoice,compChoice);
 printf("THANKYOU FOR PLAYING :)");
 }
